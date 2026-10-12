@@ -1,4 +1,64 @@
+.container {
+    display: flex;
+    height: 90vh;
+    border: 1px solid #3c3c3c;
+}
+
+.sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    border-right: 1px solid #3c3c3c;
+    background: #252526;
+    color: #cccccc;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #bbbbbb;
+}
+
+.addButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.fileList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.file {
+    display: block;
+    width: 100%;
+    padding: 4px 12px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+.file:hover {
+    background: #2a2d2e;
+}
+
+.active {
+    background: #37373d;
+}
+
 .editor {
-    height: 80vh;
-    width: 80vw;
+    flex: 1;
+    min-width: 0;
 }
