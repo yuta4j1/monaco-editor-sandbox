@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import { MonacoEditor } from "./components/MonacoEditor";
 
 const App: React.FC<{}> = ({}) => {
   return (
     <div>
-      <h2>Hello, React</h2>
+      <MonacoEditor />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
